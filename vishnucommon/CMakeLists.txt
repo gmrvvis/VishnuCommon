@@ -76,5 +76,5 @@ if ( MSVC )
   add_definitions("/W4")
 endif( )
 
-common_library( vishnucommon )
+common_library( VishnuCommon )
 

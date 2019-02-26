@@ -12,8 +12,8 @@ set( PROJECT_VERSION_MAJOR "1" )
 set( PROJECT_VERSION_MINOR "4" )
 set( PROJECT_VERSION_PATCH "0" )
 set( PROJECT_VERSION ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH} )
-project( vishnucommon VERSION ${PROJECT_VERSION} )
-set( vishnucommon_VERSION_ABI 5 )
+project( VishnuCommon VERSION ${PROJECT_VERSION} )
+set( VishnuCommon_VERSION_ABI 5 )
 
 # Disable in source building
 if( "${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}" )
@@ -38,7 +38,7 @@ include( GitExternal )
 
 set( VISHNUCOMMON_DESCRIPTION "Vishnu Common" )
 set( VISHNUCOMMON_MAINTAINER "Gonzalo Bayo Martinez <gonzalo.bayo@urjc.es>")
-set( VISHNUCOMMON_LICENSE "LGPLv3" )
+set( VISHNUCOMMON_LICENSE "MIT" )
 set( COMMON_PROJECT_DOMAIN gmrv.es )
 
 # Allow warnings
@@ -59,12 +59,6 @@ list( APPEND VISHNUCOMMON_DEPENDENT_LIBRARIES
 
 add_subdirectory( vishnucommon )
 add_subdirectory( examples )
-
-if( MSVC )  
-  if( CMAKE_VERSION VERSION_GREATER 3.6 )
-    set_property( DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT example )
-  endif( )
-endif( )
 
 set( DOXYGEN_MAINPAGE_MD README.md )
 set( DOXYGEN_EXTRA_INPUT ${PROJECT_SOURCE_DIR}/README.md )

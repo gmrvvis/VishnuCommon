@@ -1,5 +1,5 @@
 # VishnuCommon
-(c) 2018-2019 Gonzalo Bayo
+Copyright (c) 2015-2019 GMRV/URJC.
 
 ## Introduction
 
@@ -12,8 +12,8 @@ framework applications.
 
 ## Building
 
-VishnuCommon has been successfully built and tested on Ubuntu 18.04/Windows 10.
-The following steps are for build:
+VishnuCommon has been successfully built and tested on Ubuntu 18.04 / 
+Windows 10. The following steps are for build:
 
 ```bash
 $ git clone git@gitlab.gmrv.es:cbbsp1/vishnucommon.git
@@ -23,4 +23,4 @@ $ cmake ..
 
 ## License
 
-GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+MIT License
