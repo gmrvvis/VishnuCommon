@@ -2,8 +2,6 @@
  * Copyright (c) 2018-2019 GMRV/URJC.
  * 
  * Authors: Gonzalo Bayo Martinez <gonzalo.bayo@urjc.es>
- * 
- * This file is part of VishnuCommon <https://gitlab.gmrv.es/cbbsp1/vishnucommon>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of his software and associated documentation files (the "Software"), to deal
